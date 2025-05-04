@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Print log
-        run: echo "Scheduled build completed successfully!"
+        run: echo "Scheduled build completed successfully"
