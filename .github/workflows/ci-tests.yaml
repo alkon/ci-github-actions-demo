@@ -1,4 +1,4 @@
-name: CI Tests
+name: CI Tests # Comment to commit and push
 
 on:
   push:
