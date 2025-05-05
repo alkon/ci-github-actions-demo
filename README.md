@@ -94,12 +94,12 @@ on:
 
 2. **Download the latest runner package** for macOS:
   ```bash
-     curl -o actions-runner-osx-x64-2.323.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.323.0/actions-runner-osx-x64-2.323.0.tar.gz
+      curl -o actions-runner-osx-x64-2.323.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.323.0/actions-runner-osx-x64-2.323.0.tar.gz
   ```
 3. **Extract the installer**:
-    ```bash
+  ```bash
     tar xzf ./actions-runner-osx-x64-2.323.0.tar.gz
-    ```
+  ```
 
 #### b. Configure the Runner
 
