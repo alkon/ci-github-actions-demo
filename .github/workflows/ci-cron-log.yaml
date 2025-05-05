@@ -2,7 +2,7 @@ name: CI Cron Log
 
 on:
   schedule:
-    - cron: '*/2 * * * *' # '*/2 * * * *' for test only; original: '0 0 * * *'
+    - cron: '0 0 * * *' # '*/2 * * * *' for test only; original: '0 0 * * *'
 
 jobs:
   run-cron-log:
