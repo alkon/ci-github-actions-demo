@@ -82,3 +82,48 @@ on:
           matrix:
           [...]
     ``` 
+    
+### Self-Hosted GitHub Actions Runner Setup
+
+#### a. Download and Install the Runner
+
+1. **Create a folder** to store the runner files:
+  ```bash
+    mkdir actions-runner && cd actions-runner
+  ```
+
+2. **Download the latest runner package** for macOS:
+  ```bash
+     curl -o actions-runner-osx-x64-2.323.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.323.0/actions-runner-osx-x64-2.323.0.tar.gz
+  ```
+3. **Extract the installer**:
+    ```bash
+    tar xzf ./actions-runner-osx-x64-2.323.0.tar.gz
+    ```
+
+#### b. Configure the Runner
+
+  **Start the configuration process** by running the following command:
+  ```bash
+     ./config.sh --url https://github.com/alkon/ci-github-actions-demo --token YOUR_TOKEN
+  ```
+
+  - Note: Replace `YOUR_TOKEN` with the authentication token provided by GitHub when setting up the self-hosted runner in your repository settings.
+
+#### c. Run Self-Hosted Runner
+  **Start the runner**:
+  ```bash
+     ./run.sh
+  ```
+
+ - Note: This command will keep the runner running and listening for jobs.
+
+#### d. Using Self-Hosted Runner in GitHub Workflows
+
+- Update GitHub Actions YAML file for the required **job** with the following configuration:
+
+```yaml
+jobs:
+  job-name:
+    runs-on: self-hosted
+```
