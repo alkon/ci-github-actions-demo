@@ -1,4 +1,4 @@
-### Home Assignment: Continuous Integration (CI) and GitHub Actions
+### Home Assignment 6: Continuous Integration (CI) and GitHub Actions
 
 ### Part 1: CI with GitHub Actions
 #### 1. Setting up a repo
